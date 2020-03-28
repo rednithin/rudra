@@ -1029,6 +1029,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "rudra"
+version = "0.1.0"
+dependencies = [
+ "dotenv",
+ "futures-core",
+ "serde",
+ "sqlx",
+ "tokio",
+ "warp",
+]
+
+[[package]]
 name = "ryu"
 version = "1.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1476,18 +1488,6 @@ dependencies = [
  "tokio-tungstenite",
  "tower-service",
  "urlencoding",
-]
-
-[[package]]
-name = "warp-test"
-version = "0.1.0"
-dependencies = [
- "dotenv",
- "futures-core",
- "serde",
- "sqlx",
- "tokio",
- "warp",
 ]
 
 [[package]]
