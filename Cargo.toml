@@ -1,0 +1,16 @@
+[package]
+name = "warp-test"
+version = "0.1.0"
+authors = ["rednithin <reddy.nithinpg@live.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "*", features = ["macros", "rt-threaded"] }
+# tokio = { git = "https://github.com/tokio-rs/tokio", rev="acf8a7da7a64bf08d578db9a9836a8e061765314", features = ["macros", "rt-threaded"] }
+warp = "*"
+sqlx = { git = "https://github.com/launchbadge/sqlx", rev = "4670577c612c582675f4a9a5017f259e0ed88b7c", default-features = false, features = [ "runtime-tokio", "macros", "sqlite" ] }
+dotenv = "*"
+futures-core = "*"
+serde = { version = "*", features = ["derive"] }
