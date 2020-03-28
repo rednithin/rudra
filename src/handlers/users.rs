@@ -1,6 +1,6 @@
-use crate::state::AppState;
-
 use warp;
+
+use crate::state::AppState;
 
 pub async fn fetch_all_users(state: AppState) -> Result<impl warp::Reply, warp::Rejection> {
     #[derive(serde::Serialize, Debug)]

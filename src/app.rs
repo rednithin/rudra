@@ -1,6 +1,7 @@
-use crate::{routes, state};
 use std::net::SocketAddr;
 use warp;
+
+use crate::{routes, state};
 
 fn get_bind_address() -> SocketAddr {
     dotenv::var("BIND_ADDRESS")
