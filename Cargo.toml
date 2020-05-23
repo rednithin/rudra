@@ -10,7 +10,8 @@ edition = "2018"
 tokio = { version = "*", features = ["macros", "rt-threaded"] }
 # tokio = { git = "https://github.com/tokio-rs/tokio", rev="acf8a7da7a64bf08d578db9a9836a8e061765314", features = ["macros", "rt-threaded"] }
 warp = "*"
-sqlx = { git = "https://github.com/launchbadge/sqlx", rev = "4670577c612c582675f4a9a5017f259e0ed88b7c", default-features = false, features = [ "runtime-tokio", "macros", "sqlite" ] }
+sqlx = { version = "*", default-features = false, features = [ "runtime-tokio", "macros", "sqlite" ] }
 dotenv = "*"
 futures-core = "*"
 serde = { version = "*", features = ["derive"] }
+openssl = { version = '*', features = ["vendored"] }
