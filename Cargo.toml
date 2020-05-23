@@ -12,6 +12,5 @@ tokio = { version = "*", features = ["macros", "rt-threaded"] }
 warp = "*"
 sqlx = { version = "*", default-features = false, features = [ "runtime-tokio", "macros", "sqlite" ] }
 dotenv = "*"
-futures-core = "*"
 serde = { version = "*", features = ["derive"] }
 openssl = { version = '*', features = ["vendored"] }
